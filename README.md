@@ -37,9 +37,10 @@ The Network Bandwidth Monitor is a Python tool designed to analyze network traff
 ## Usage
 
 1. Clone the repository: **git clone https://github.com/yourusername/network-bandwidth-monitor.git**
-2. Install the required dependencies: **pip install scapy matplotlib** 
-3. Run the `network_bandwidth_monitor.py` script: **python network_bandwidth_monitor.py**
-4. Follow the on-screen instructions to analyze your packet capture file.
+2. Install the required dependencies: **pip install scapy matplotlib**
+3. Run the `dataset.py` script: **python dataset.py** -> To create dataset for analysis
+4. Run the `network_bandwidth_monitor.py` script: **python network_bandwidth_monitor.py** -> To create the plots and analyse
+5. Follow the on-screen instructions to analyze your packet capture file.
 
 ## File Structure
 
