@@ -63,6 +63,17 @@ def visualize_anomalies(anomalies):
     plt.savefig('anomalies_plot.png')
     print("Detected anomalies visualization saved as 'anomalies_plot.png'.")
 
+def analyze_flows(packets):
+    print("\nAnalyzing flows...")
+    flow_packet_sizes = [len(packet) for packet in packets]
+    plt.figure(figsize=(10, 5))
+    plt.hist(flow_packet_sizes, bins=20, color='orange', edgecolor='black')
+    plt.xlabel('Packet Size (bytes)')
+    plt.ylabel('Frequency')
+    plt.title('Flow Packet Size Distribution')
+    plt.savefig('flow_packet_size_distribution.png')
+    print("Flow packet size distribution visualization saved as 'flow_packet_size_distribution.png'.")
+
 def main():
     packets = read_packet_capture_file("new_synthetic_packet_capture.pcap")
 
@@ -79,6 +90,9 @@ def main():
     print("Number of Detected Anomalies:", len(anomalies))
 
     visualize_anomalies(anomalies)
+
+    analyze_flows(packets)
+
     print("Analysis completed successfully.")
 
 if __name__ == "__main__":
