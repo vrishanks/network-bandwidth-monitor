@@ -1,6 +1,22 @@
 # Network Bandwidth Monitor
 
-Network Bandwidth Monitor is a Python tool for analyzing network traffic captured in a packet capture file (PCAP). It calculates metrics such as total bandwidth usage, average packet size, visualizes bandwidth usage over time, and detects anomalies in packet sizes.
+`Read and Parse Packet Capture Files (PCAP)`:
+- The tool can read and parse packet capture files in PCAP format, which are commonly used to store network traffic data captured by tools like Wireshark or tcpdump.
+
+`Calculate Metrics`:
+- It calculates essential network traffic metrics such as total bandwidth usage and average packet size. These metrics provide insights into the overall network activity and the size distribution of packets.
+
+`Visualize Bandwidth Usage Over Time`:
+- The tool generates visualizations to show how network bandwidth usage changes over time. This helps users identify patterns, peaks, and trends in network activity.
+
+`Visualize Packet Size Distribution`:
+- It visualizes the distribution of packet sizes within the captured network traffic. This histogram allows users to understand the range and frequency of packet sizes, which can be useful for network optimization and troubleshooting.
+
+`Detect Anomalies in Packet Sizes`:
+- The tool can detect anomalies in packet sizes based on predefined criteria. Anomalies could indicate potential issues or irregularities in the network traffic, such as unusually large or small packets.
+
+`Visualize Detected Anomalies`:
+- It provides visualizations of detected anomalies, making it easier for users to identify and analyze abnormal network behavior. These visualizations can aid in diagnosing network problems and improving network security.
 
 ## Features
 
