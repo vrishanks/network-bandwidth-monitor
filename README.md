@@ -1,4 +1,5 @@
 # Network Bandwidth Monitor
+The Network Bandwidth Monitor is a Python tool designed to analyze network traffic captured in packet capture files (PCAP). It provides various features to help users understand and visualize network bandwidth usage and packet characteristics. 
 
 `Read and Parse Packet Capture Files (PCAP)`:
 - The tool can read and parse packet capture files in PCAP format, which are commonly used to store network traffic data captured by tools like Wireshark or tcpdump.
